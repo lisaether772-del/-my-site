@@ -1,0 +1,203 @@
+/* Basic Reset for clean starting point */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ------------------------------------------- */
+/* A. Navigation Bar Styling */
+/* ------------------------------------------- */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    /* Required: Change link color & Remove underline */
+    color: white;
+    text-decoration: none;
+    
+    /* Required: Add padding and spacing */
+    padding: 10px 15px;
+    margin: 0 5px;
+    display: inline-block; /* Allows padding to work correctly */
+    font-weight: bold;
+}
+
+/* Required: Add hover effect */
+.navbar a:hover {
+    color: #ffd700; /* Gold color on hover */
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* ------------------------------------------- */
+/* B. Two-Column Layout Conversion (Using Flexbox) */
+/* ------------------------------------------- */
+#main-content {
+    /* Required: Convert layout using display: flex */
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto; /* Center the layout */
+    padding: 0 20px;
+    background-color: white; /* Give content a white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+    /* Flex: 1 for 25% width */
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #eee; /* Visual separator */
+}
+
+.right-column {
+    /* Flex: 3 for 75% width (adjust flex values for desired proportion) */
+    flex: 3;
+    padding: 20px 40px;
+}
+
+/* ------------------------------------------- */
+/* C. Profile Section Styling */
+/* ------------------------------------------- */
+.profile-img {
+    /* Required: Profile Image styling */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Rounded edges */
+    object-fit: cover;
+    border: 4px solid #333; /* Nice border effect */
+    display: block;
+    margin: 0 auto 10px; /* Center image */
+}
+
+.profile-section h1 {
+    /* Required: Name heading styling */
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job-title {
+    /* Required: Job title styling */
+    color: #555; /* Darker gray */
+    font-style: italic;
+    font-size: 1.1em;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------------------- */
+/* D. Contact Section Styling */
+/* ------------------------------------------- */
+.contact-section ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.contact-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    color: #007bff; /* Standard link color */
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------------------- */
+/* E. Skills Section Styling */
+/* ------------------------------------------- */
+.skills-section dl {
+    /* Required: Add padding, background color, border/rounded corners */
+    padding: 15px;
+    background-color: #e9f7ef; /* Light green background */
+    border: 1px solid #d4edda;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.skills-section dt {
+    font-weight: bold;
+    color: #155724; /* Dark green text */
+    margin-top: 10px;
+}
+
+.skills-section dd {
+    margin-left: 20px;
+    font-style: italic;
+    color: #444;
+}
+
+
+/* ------------------------------------------- */
+/* F. About Me Section Styling */
+/* ------------------------------------------- */
+.about-me-section p {
+    /* Required: Line spacing */
+    line-height: 1.6;
+    /* Required: Text alignment */
+    text-align: justify;
+    /* Required: Margin adjustments */
+    margin: 20px 0;
+    color: #444;
+}
+
+/* ------------------------------------------- */
+/* G. Message Form Styling */
+/* ------------------------------------------- */
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+    /* Required: Style text fields */
+    width: 100%; /* Required: Set width to 100% */
+    padding: 10px;
+    margin-bottom: 15px;
+    /* Required: Add borders */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+    resize: vertical; /* Allow resizing only vertically for textarea */
+}
+
+.message-form textarea {
+    min-height: 100px;
+}
+
+.message-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Required: Add hover effect to the submit button */
+.message-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* ------------------------------------------- */
+/* H. Footer Styling */
+/* ------------------------------------------- */
+.main-footer {
+    /* Required: Center the footer */
+    text-align: center;
+    padding: 15px 0;
+    /* Required: Add a background color */
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.main-footer strong {
+    font-size: 1.1em;
+}
